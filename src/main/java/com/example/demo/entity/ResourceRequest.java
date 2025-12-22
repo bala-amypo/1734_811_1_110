@@ -1,4 +1,4 @@
-package com.optimizer.resourceallocation.entity;
+package com.demo.resourceallocation.entity;
 
 import jakarta.persistence.*;
 

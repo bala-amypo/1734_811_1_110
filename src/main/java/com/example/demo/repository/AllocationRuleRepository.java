@@ -1,6 +1,6 @@
-package com.optimizer.resourceallocation.repository;
+package com.demo.resourceallocation.repository;
 
-import com.optimizer.resourceallocation.entity.AllocationRule;
+import com.demo.resourceallocation.entity.AllocationRule;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AllocationRuleRepository
