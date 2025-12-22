@@ -1,7 +1,7 @@
-package com.optimizer.resourceallocation.controller;
+package com.demo.resourceallocation.controller;
 
-import com.optimizer.resourceallocation.entity.ResourceRequest;
-import com.optimizer.resourceallocation.service.ResourceRequestService;
+import com.demo.resourceallocation.entity.ResourceRequest;
+import com.demo.resourceallocation.service.ResourceRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
