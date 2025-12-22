@@ -1,6 +1,6 @@
-package com.optimizer.resourceallocation.repository;
+package com.demo.resourceallocation.repository;
 
-import com.optimizer.resourceallocation.entity.Resource;
+import com.demo.resourceallocation.entity.Resource;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

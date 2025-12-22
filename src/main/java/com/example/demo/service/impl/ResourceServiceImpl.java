@@ -1,8 +1,8 @@
-package com.optimizer.resourceallocation.service.impl;
+package com.demo.resourceallocation.service.impl;
 
-import com.optimizer.resourceallocation.entity.Resource;
-import com.optimizer.resourceallocation.repository.ResourceRepository;
-import com.optimizer.resourceallocation.service.ResourceService;
+import com.demo.resourceallocation.entity.Resource;
+import com.demo.resourceallocation.repository.ResourceRepository;
+import com.demo.resourceallocation.service.ResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

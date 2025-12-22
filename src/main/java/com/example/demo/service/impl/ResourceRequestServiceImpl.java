@@ -1,10 +1,10 @@
-package com.optimizer.resourceallocation.service.impl;
+package com.demo.resourceallocation.service.impl;
 
-import com.optimizer.resourceallocation.entity.ResourceRequest;
-import com.optimizer.resourceallocation.entity.User;
-import com.optimizer.resourceallocation.repository.ResourceRequestRepository;
-import com.optimizer.resourceallocation.repository.UserRepository;
-import com.optimizer.resourceallocation.service.ResourceRequestService;
+import com.demo.resourceallocation.entity.ResourceRequest;
+import com.demo.resourceallocation.entity.User;
+import com.demo.resourceallocation.repository.ResourceRequestRepository;
+import com.demo.resourceallocation.repository.UserRepository;
+import com.demo.resourceallocation.service.ResourceRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
