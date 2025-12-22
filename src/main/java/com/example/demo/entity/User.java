@@ -17,7 +17,7 @@ public class User {
     private String email;
 
     @Column(nullable = false)
-    private String role; // ADMIN, MANAGER, USER
+    private String role; 
 
     public User() {
     }
@@ -28,7 +28,7 @@ public class User {
         this.role = role;
     }
 
-    // Getters and Setters
+    
     public Long getId() {
         return id;
     }

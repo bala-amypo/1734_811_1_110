@@ -21,8 +21,7 @@ public class ResourceRequest {
     private int requestedAmount;
 
     @Column(nullable = false)
-    private String status; // PENDING, APPROVED, REJECTED
-
+    private String status; 
     public ResourceRequest() {
     }
 
@@ -33,7 +32,7 @@ public class ResourceRequest {
         this.status = status;
     }
 
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }
