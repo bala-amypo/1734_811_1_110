@@ -1,6 +1,6 @@
-package com.optimizer.resourceallocation.service;
+package com.demo.resourceallocation.service;
 
-import com.optimizer.resourceallocation.entity.User;
+import com.demo.resourceallocation.entity.User;
 
 import java.util.List;
 
