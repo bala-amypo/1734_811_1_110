@@ -4,25 +4,24 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "users", uniqueConstraints = {
-        @UniqueConstraint(columnNames = "email")
+@Table(uniqueConstraints = {
+        @UniqueConstraint(columnNames = "ruleName")
 })
-public class User {
+public class AllocationRule {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String fullName;
-    private String email;
-    private String role;
-
+    private String ruleName;
+    private String ruleType;
+    private Integer priorityWeight;
     private LocalDateTime createdAt;
 
     @PrePersist
     void onCreate() {
         createdAt = LocalDateTime.now();
-        if (role == null) role = "USER";
+        if (priorityWeight == null) priorityWeight = 0;
     }
 
     // getters and setters
