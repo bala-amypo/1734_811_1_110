@@ -1,0 +1,42 @@
+package com.example.demo.security;
+
+import io.jsonwebtoken.*;
+import java.util.Date;
+import java.util.Map;
+
+public class JwtUtil {
+
+    private final String secret;
+    private final long validityInMs;
+
+    // REQUIRED constructor
+    public JwtUtil(String secret, long validityInMs) {
+        this.secret = secret;
+        this.validityInMs = validityInMs;
+    }
+
+    public String generateToken(Long userId, String email, String role) {
+        Claims claims = Jwts.claims(Map.of(
+                "userId", userId,
+                "email", email,
+                "role", role
+        ));
+
+        Date now = new Date();
+        Date expiry = new Date(now.getTime() + validityInMs);
+
+        return Jwts.builder()
+                .setClaims(claims)
+                .setIssuedAt(now)
+                .setExpiration(expiry)
+                .signWith(SignatureAlgorithm.HS256, secret)
+                .compact();
+    }
+
+    public Claims parseClaims(String token) {
+        return Jwts.parser()
+                .setSigningKey(secret)
+                .parseClaimsJws(token)
+                .getBody();
+    }
+}
