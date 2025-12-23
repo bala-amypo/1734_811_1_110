@@ -14,23 +14,18 @@
     <name>resource-allocation-optimizer</name>
     <description>Resource Allocation Optimizer</description>
 
-    <!-- ✅ Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.5</version>
         <relativePath/>
     </parent>
-
-    <!-- ✅ Java Version -->
     <properties>
         <java.version>17</java.version>
     </properties>
 
-    <!-- ✅ DEPENDENCIES -->
     <dependencies>
 
-        <!-- 🌐 Spring Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
