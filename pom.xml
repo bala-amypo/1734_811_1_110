@@ -99,20 +99,7 @@
             <version>2.5.0</version>
         </dependency>
 
-        <!-- Spring Boot Test (JUnit EXCLUDED) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.jupiter</groupId>
-                    <artifactId>junit-jupiter</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <!-- TestNG -->
+        <!-- TestNG (ONLY testing framework) -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -143,8 +130,8 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire Plugin (FORCE TESTNG) -->
-           <plugin>
+            <!-- Surefire Plugin (FORCE TESTNG + testng.xml) -->
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
@@ -160,8 +147,7 @@
                         <version>7.10.2</version>
                     </dependency>
                 </dependencies>
-</plugin>
-
+            </plugin>
 
         </plugins>
     </build>
