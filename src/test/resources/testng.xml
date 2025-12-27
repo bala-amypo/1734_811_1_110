@@ -5,7 +5,7 @@
 
     <test name="All Tests">
         <classes>
-            <class name="com.example.demo.MasterTest"/>
+            <class name="com.example.demo.MasterTestNGSuiteTest"/>
         </classes>
     </test>
 
