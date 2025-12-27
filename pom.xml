@@ -144,10 +144,15 @@
             </plugin>
 
             <!-- Surefire Plugin (FORCE TESTNG) -->
-            <plugin>
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.testng</groupId>
@@ -155,7 +160,8 @@
                         <version>7.10.2</version>
                     </dependency>
                 </dependencies>
-            </plugin>
+</plugin>
+
 
         </plugins>
     </build>
